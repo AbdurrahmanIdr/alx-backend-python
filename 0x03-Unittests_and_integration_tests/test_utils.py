@@ -10,7 +10,6 @@ from typing import (
     Dict,
     Mapping,
     Sequence,
-    Tuple,
     Union,
 )
 
@@ -35,7 +34,7 @@ class TestAccessNestedMap(unittest.TestCase):
             nested_map: Mapping,
             path: Sequence,
             expected: Union[Dict, int]
-            ) -> None:
+    ) -> None:
         '''Tests `access_nexted_map`'s output
         '''
         self.assertEqual(access_nested_map(nested_map, path), expected)
@@ -49,7 +48,7 @@ class TestAccessNestedMap(unittest.TestCase):
             nested_map: Mapping,
             path: Sequence,
             exception: Exception,
-            ) -> None:
+    ) -> None:
         '''Tests `access_nested_map`'s exception raising.
         '''
         with self.assertRaises(exception):
@@ -68,7 +67,7 @@ class TestGetJson(unittest.TestCase):
             self,
             test_url: str,
             test_payload: Dict,
-            ) -> None:
+    ) -> None:
         '''Tests `get_json`'s output.
         '''
 
@@ -81,6 +80,7 @@ class TestGetJson(unittest.TestCase):
 
 class TestMemoize(unittest.TestCase):
     """Tests the `memoize` function."""
+
     def test_memoize(self) -> None:
         """Tests `memoize`'s output."""
         class TestClass:
@@ -94,7 +94,7 @@ class TestMemoize(unittest.TestCase):
                 TestClass,
                 "a_method",
                 return_value=lambda: 42,
-                ) as memo_fxn:
+        ) as memo_fxn:
             test_class = TestClass()
             self.assertEqual(test_class.a_property(), 42)
             self.assertEqual(test_class.a_property(), 42)
