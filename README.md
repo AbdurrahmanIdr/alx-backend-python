@@ -42,4 +42,4 @@ By working through these projects, you will be able to:
 
 ## License
 
-This project is licensed under the [MIT License](./LICENCE).
+This project is licensed under the [ALX License](./LICENCE).
