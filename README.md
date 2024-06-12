@@ -29,6 +29,12 @@ By working through these projects, you will be able to:
 - All functions (inside and outside a class) should have documentation.
 - Documentation is not a simple word but a real sentence explaining the purpose of the module, class, or method.
 
+## Projects
+
+1. **0x00-python_variable_annotations**
+   - Learn and apply type annotations in Python.
+   - Tasks include annotating functions, variables, complex types, and more.
+   - Tools: mypy for static type checking.
 
 ## Author
 
